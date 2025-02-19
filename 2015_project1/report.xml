@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="3" skipped="0" tests="15" time="23.589" timestamp="2025-02-19T22:08:13.752697+02:00" hostname="DESKTOP-2JGG0MK"><testcase classname="tests.test_main" name="test_successful_login[chromium]" time="6.153" /><testcase classname="tests.test_main" name="test_invalid_login[firefox]" time="5.986" /><testcase classname="tests.test_main" name="test_empty_fields[chromium]" time="5.962"><failure message="AttributeError: 'LocatorAssertions' object has no attribute 'text_content'">page = &lt;Page url='https://www.saucedemo.com/'&gt;
+
+    def test_empty_fields(page: Page):
+        page.goto(BASE_URL)
+        page.click("#login-button")
+        #assert page.locator('[data-test="error"]').text_content()=='Username is required'
+    
+&gt;       expect(page.locator('[data-test="error"]')).text_content().to_have_text("Username is required")
+E       AttributeError: 'LocatorAssertions' object has no attribute 'text_content'
+
+tests\test_main.py:64: AttributeError</failure></testcase><testcase classname="tests.test_main" name="test_successful_login[webkit]" time="5.994" /><testcase classname="tests.test_main" name="test_empty_fields[firefox]" time="5.465"><failure message="AttributeError: 'LocatorAssertions' object has no attribute 'text_content'">page = &lt;Page url='https://www.saucedemo.com/'&gt;
+
+    def test_empty_fields(page: Page):
+        page.goto(BASE_URL)
+        page.click("#login-button")
+        #assert page.locator('[data-test="error"]').text_content()=='Username is required'
+    
+&gt;       expect(page.locator('[data-test="error"]')).text_content().to_have_text("Username is required")
+E       AttributeError: 'LocatorAssertions' object has no attribute 'text_content'
+
+tests\test_main.py:64: AttributeError</failure></testcase><testcase classname="tests.test_main" name="test_invalid_login[webkit]" time="5.473" /><testcase classname="tests.test_main" name="test_successful_login[firefox]" time="5.393" /><testcase classname="tests.test_main" name="test_invalid_login[chromium]" time="5.476" /><testcase classname="tests.test_main" name="test_navigation_bar_accessibility[firefox]" time="5.577" /><testcase classname="tests.test_main" name="test_navigation_bar_accessibility[chromium]" time="5.462" /><testcase classname="tests.test_main" name="test_empty_fields[webkit]" time="5.447"><failure message="AttributeError: 'LocatorAssertions' object has no attribute 'text_content'">page = &lt;Page url='https://www.saucedemo.com/'&gt;
+
+    def test_empty_fields(page: Page):
+        page.goto(BASE_URL)
+        page.click("#login-button")
+        #assert page.locator('[data-test="error"]').text_content()=='Username is required'
+    
+&gt;       expect(page.locator('[data-test="error"]')).text_content().to_have_text("Username is required")
+E       AttributeError: 'LocatorAssertions' object has no attribute 'text_content'
+
+tests\test_main.py:64: AttributeError</failure></testcase><testcase classname="tests.test_main" name="test_navigation_bar_accessibility[webkit]" time="5.404" /><testcase classname="tests.test_main" name="test_invalid_email[firefox]" time="5.225" /><testcase classname="tests.test_main" name="test_invalid_email[chromium]" time="5.299" /><testcase classname="tests.test_main" name="test_invalid_email[webkit]" time="5.144" /></testsuite></testsuites>
