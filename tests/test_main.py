@@ -21,6 +21,7 @@ def login(page: Page, username: str, password: str):
     page.fill("#user-name", username)
     page.fill("#password", password)
     page.click("#login-button")
+    #FFFFF
 
 # Pytest Fixtures
 @pytest.fixture(params=["chromium", "firefox", "webkit"])
