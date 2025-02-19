@@ -37,6 +37,8 @@ def page(browser):
     yield page
     page.close()
 
+    #yaniv
+
 
 
 
@@ -45,6 +47,7 @@ def page(browser):
 def test_successful_login(page: Page):
     login(page, "standard_user", "secret_sauce")
     page.wait_for_url("**/inventory.html")  # Ensure the URL changes before assertion
+    assert page.url.split('/')[-1] == "inventory.html"
     assert page.url.split('/')[-1] == "inventory.html"
 
 
