@@ -36,10 +36,7 @@ def page(browser):
     page = context.new_page()
     yield page
     page.close()
-    #fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
-    #eeeeee
-    ###
-    #ffffftttt
+   #clean
 
 
 
